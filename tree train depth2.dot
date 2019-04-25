@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<color_intensity &le; -0.536<br/>entropy = 1.567<br/>samples = 124<br/>value = [40, 50, 34]<br/>class = class_1>, fillcolor="#39e5811e"] ;
+1 [label=<entropy = 0.0<br/>samples = 45<br/>value = [0, 45, 0]<br/>class = class_1>, fillcolor="#39e581ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<flavanoids &le; -0.451<br/>entropy = 1.273<br/>samples = 79<br/>value = [40, 5, 34]<br/>class = class_0>, fillcolor="#e5813922"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<entropy = 0.0<br/>samples = 34<br/>value = [0, 0, 34]<br/>class = class_2>, fillcolor="#8139e5ff"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.503<br/>samples = 45<br/>value = [40, 5, 0]<br/>class = class_0>, fillcolor="#e58139df"] ;
+2 -> 4 ;
+}
